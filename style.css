@@ -214,6 +214,7 @@ header .logo img{
 .botao-abrir-menu i{
     color: #4F6F52;
     font-size: 40px;
+    display: none;
 }
 
 .overlay-menu{
@@ -259,6 +260,7 @@ header .logo img{
     border-radius: 3px;
     display: block;
     transition: 1.3s;
+    text-decoration: none;
 }
 
 .menu-para-celular nav ul li a:hover{
@@ -273,6 +275,19 @@ header .logo img{
     color: #FFFFFF;
     font-size: 30px;
 }
+
+
+.menu-para-celular button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #739072;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
 /*FORMULÁRIO*/
 
 .modal {
@@ -538,12 +553,15 @@ section.historico {
     display: block;
 }
 
-@media screen and (max-width: 1020px) {
+
 
     @media screen and (max-width: 1020px) {
         /* MENU */
         .menu-para-pc, .botao-contato {
             display: none;
+        }
+        .botao-abrir-menu i{
+            display: block;
         }
     
         header {
@@ -661,4 +679,3 @@ section.historico {
     }
     
 
-}
